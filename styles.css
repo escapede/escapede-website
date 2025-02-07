@@ -1,26 +1,29 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-/* Global Styles */
-body {
-    font-family: 'Montserrat', sans-serif;
+/* Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    box-sizing: border-box;
 }
 
-/* Navbar */
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
 header {
     position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
     background-color: rgba(0, 51, 102, 0.9);
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: 0.3s ease-in-out;
+    z-index: 1000;
 }
 
 .logo img {
@@ -33,14 +36,10 @@ nav ul {
     gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight: 600;
+    font-weight: bold;
     padding: 10px;
     transition: 0.3s;
 }
@@ -63,19 +62,24 @@ nav ul li a:hover {
 
 .overlay {
     background: rgba(0, 0, 0, 0.6);
-    padding: 30px;
+    padding: 40px;
     color: white;
     border-radius: 10px;
 }
 
 .overlay h1 {
     font-size: 2.5em;
+    font-weight: bold;
+}
+
+.overlay p {
+    font-size: 1.2em;
 }
 
 .btn {
     display: inline-block;
     margin-top: 10px;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background-color: #ffcc00;
     color: #003366;
     font-weight: bold;
@@ -87,8 +91,8 @@ nav ul li a:hover {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px;
-    padding: 30px;
+    gap: 20px;
+    padding: 40px;
 }
 
 .grid-item img {
