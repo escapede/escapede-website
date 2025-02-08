@@ -24,6 +24,9 @@ header {
 .logo img {
     height: 50px;
     width: auto;
+    background-color: white; /* Ensures White Background */
+    padding: 5px;
+    border-radius: 5px;
 }
 
 /* Navigation */
@@ -42,8 +45,14 @@ nav ul li a {
     color: white;
     font-weight: bold;
     font-size: 16px;
+    transition: 0.3s;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Book Now Button */
 .book-now {
     background-color: #008000;
     color: white;
@@ -70,17 +79,13 @@ nav ul li a {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 /* Sections */
 .section {
     padding: 50px;
     text-align: center;
-}
-
-h2 {
-    color: #000066;
-    margin-bottom: 20px;
 }
 
 /* Grid */
