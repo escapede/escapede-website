@@ -11,12 +11,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #000066;
+    background-color: #000066; /* Fixed navbar color */
     padding: 15px 40px;
 }
 
+/* Logo Styling */
 .logo img {
     height: 50px;
+    margin-left: 10px;
 }
 
 /* Navigation Bar */
@@ -55,6 +57,7 @@ nav ul li a:hover {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    margin-left: 15px;
 }
 
 .book-now:hover {
