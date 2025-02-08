@@ -5,40 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escapede - Explore Pakistan</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- Navigation -->
+    <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/logo.jpg" alt="Escapede Logo">
+            <img src="images/logo.png" alt="Escapede Logo">
         </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#destinations">Destinations</a></li>
                 <li><a href="#religious-tours">Religious Tours</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="#extra-services">Extra Services</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><button class="book-now">Book Now</button></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="hero">
-        <h1>Discover Pakistan’s Beauty</h1>
-        <p>Explore breathtaking landscapes, rich culture, and religious heritage.</p>
-        <a href="#destinations" class="cta-btn">Explore Now</a>
+        <h1>Welcome to Escapede</h1>
+        <p>Discover breathtaking landscapes, rich culture, and religious heritage.</p>
+        <button class="explore-btn">Explore Now</button>
     </section>
 
-    <!-- Destinations -->
+    <!-- Top Destinations -->
     <section id="destinations">
         <h2>Top Destinations</h2>
-        <div class="grid-container">
-            <div class="grid-item"><img src="images/jahaz_banda.jpg" alt="Jahaz Banda"><p>Jahaz Banda</p></div>
-            <div class="grid-item"><img src="images/dudipatsar_lake.jpg" alt="Dudipatsar Lake"><p>Dudipatsar Lake</p></div>
-            <div class="grid-item"><img src="images/paya_meadows.jpg" alt="Paya Meadows"><p>Paya Meadows</p></div>
-            <div class="grid-item"><img src="images/gitidas_meadows.jpg" alt="Gitidas Meadows"><p>Gitidas Meadows</p></div>
+        <div class="grid">
+            <div class="card"><img src="images/jahaz_banda.jpg" alt="Jahaz Banda"><p>Jahaz Banda</p></div>
+            <div class="card"><img src="images/dudipatsar_lake.jpg" alt="Dudipatsar Lake"><p>Dudipatsar Lake</p></div>
+            <div class="card"><img src="images/paya_meadows.jpg" alt="Paya Meadows"><p>Paya Meadows</p></div>
+            <div class="card"><img src="images/gitidas_meadows.jpg" alt="Gitidas Meadows"><p>Gitidas Meadows</p></div>
         </div>
     </section>
 
@@ -46,12 +48,53 @@
     <section id="religious-tours">
         <h2>Religious Tours</h2>
         <p>Experience the spiritual heritage of Pakistan.</p>
-        <div class="grid-container">
-            <div class="grid-item"><img src="images/gurdwara_nankana_sahib.jpg" alt="Nankana Sahib"><p>Gurdwara Nankana Sahib</p></div>
-            <div class="grid-item"><img src="images/gurdwara_panja_sahib.jpg" alt="Panja Sahib"><p>Gurdwara Panja Sahib</p></div>
-            <div class="grid-item"><img src="images/gurdwara_kartarpur.jpg" alt="Kartarpur Sahib"><p>Gurdwara Kartarpur Sahib</p></div>
+        <div class="grid">
+            <div class="card"><img src="images/nankana_sahib.jpg" alt="Nankana Sahib"><p>Gurdwara Nankana Sahib</p></div>
+            <div class="card"><img src="images/panja_sahib.jpg" alt="Panja Sahib"><p>Gurdwara Panja Sahib</p></div>
+            <div class="card"><img src="images/kartarpur_sahib.jpg" alt="Kartarpur Sahib"><p>Gurdwara Kartarpur Sahib</p></div>
         </div>
     </section>
+
+    <!-- Extra Services -->
+    <section id="extra-services">
+        <h2>Extra Services</h2>
+        <p>Need car rental or extra services? We’ve got you covered.</p>
+        <ul>
+            <li>✔ Car Rental</li>
+            <li>✔ Local Guide</li>
+            <li>✔ Customized Itineraries</li>
+        </ul>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking">
+        <h2>Book Your Trip</h2>
+        <form id="booking-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="trip">Select Trip:</label>
+            <select id="trip">
+                <option>Jahaz Banda</option>
+                <option>Dudipatsar Lake</option>
+                <option>Paya Meadows</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Chatbox -->
+    <div id="chatbox">
+        <button class="chat-toggle">💬 Chat Now</button>
+        <div class="chat-content">
+            <p>Hello! How can we assist you?</p>
+            <input type="text" placeholder="Type your message...">
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
