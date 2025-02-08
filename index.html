@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escapede</title>
+    <title>Escapede - Discover Pakistan</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <!-- Navigation Bar -->
     <header>
         <div class="logo-container">
-            <img src="logo.png" alt="Escapede Logo" class="logo">
+            <img src="images/logo.png" alt="Escapede Logo">
         </div>
         <nav>
             <ul>
@@ -20,43 +20,43 @@
                 <li><a href="#religious-tours">Religious Tours</a></li>
                 <li><a href="#extra-services">Extra Services</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="book-now">Book Now</a></li>
             </ul>
         </nav>
-        <a href="#book-now" class="book-now-btn">Book Now</a>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section">
+    <section id="home" class="hero">
         <h1>Welcome to <span>Escapede</span></h1>
         <p>Discover breathtaking landscapes, rich culture, and religious heritage.</p>
         <button class="explore-btn">Explore Now</button>
     </section>
 
-    <!-- Destinations Section -->
-    <section id="destinations" class="section">
+    <!-- Destinations -->
+    <section id="destinations">
         <h2>Top Destinations</h2>
-        <div class="grid-container">
-            <div class="destination-card">Jahaz Banda</div>
-            <div class="destination-card">Dudipatsar Lake</div>
-            <div class="destination-card">Paya Meadows</div>
-            <div class="destination-card">Gitidas Meadows</div>
+        <div class="destination-container">
+            <div class="destination-box">Jahaz Banda</div>
+            <div class="destination-box">Dudipatsar Lake</div>
+            <div class="destination-box">Paya Meadows</div>
+            <div class="destination-box">Gitidas Meadows</div>
         </div>
     </section>
 
     <!-- Religious Tours -->
-    <section id="religious-tours" class="section">
+    <section id="religious-tours">
         <h2>Religious Tours</h2>
-        <div class="grid-container">
-            <div class="destination-card">Gurdwara Nankana Sahib</div>
-            <div class="destination-card">Gurdwara Panja Sahib</div>
-            <div class="destination-card">Gurdwara Kartarpur Sahib</div>
+        <div class="destination-container">
+            <div class="destination-box">Gurdwara Nankana Sahib</div>
+            <div class="destination-box">Gurdwara Panja Sahib</div>
+            <div class="destination-box">Gurdwara Kartarpur Sahib</div>
         </div>
     </section>
 
     <!-- Extra Services -->
-    <section id="extra-services" class="section">
+    <section id="extra-services">
         <h2>Extra Services</h2>
-        <p>Need car rental or extra services? We’ve got you covered.</p>
+        <p>Need car rental or extra services? We've got you covered.</p>
         <ul>
             <li>✓ Car Rental</li>
             <li>✓ Local Guide</li>
@@ -64,35 +64,29 @@
         </ul>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <div class="social-media">
-            <a href="#" class="social-icon" id="facebook">Facebook</a>
-            <a href="#" class="social-icon" id="instagram">Instagram</a>
-            <a href="#" class="social-icon" id="twitter">Twitter</a>
-            <a href="#" class="social-icon" id="tripadvisor">TripAdvisor</a>
-            <a href="#" class="social-icon" id="whatsapp">WhatsApp</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://tripadvisor.com" target="_blank">TripAdvisor</a>
+            <a href="https://whatsapp.com" target="_blank">WhatsApp</a>
         </div>
         <p>© 2025 Escapede. All rights reserved.</p>
     </footer>
 
-    <!-- Chatbox Button -->
-    <div class="chatbox-container">
-        <button id="chatbox-toggle">💬 Chat with Us</button>
-        <div class="chatbox" id="chatbox">
-            <div class="chatbox-header">
-                <span>Chat with Us</span>
-                <button id="chatbox-close">X</button>
-            </div>
-            <div class="chatbox-body">
-                <p>How can we assist you?</p>
-                <textarea placeholder="Type your message here..."></textarea>
-                <button class="send-btn">Send</button>
-            </div>
+    <!-- Chat Box -->
+    <div class="chatbox">
+        <button class="chat-toggle">Chat with Us</button>
+        <div class="chat-content">
+            <button class="chat-close">×</button>
+            <p>How can we assist you?</p>
+            <textarea placeholder="Type your message here..."></textarea>
+            <button class="send-btn">Send</button>
         </div>
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
