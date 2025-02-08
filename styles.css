@@ -3,125 +3,123 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F8F8F8;
+    background: #f8f8f8;
+    text-align: center;
 }
 
 /* Header */
 header {
+    background: #000066;
+    padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #000066;
-    padding: 15px 30px;
+    justify-content: space-between;
 }
 
-.logo img {
-    width: 60px;
-    height: auto;
+.logo {
+    height: 50px;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
     gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: white;
     font-weight: bold;
 }
 
-.book-now {
-    background-color: green;
+.book-now-btn {
+    background: green;
     color: white;
-    padding: 8px 15px;
+    padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
 }
 
 /* Hero Section */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background-color: white;
+.hero-section {
+    padding: 40px;
+    background: white;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-    color: #000066;
-}
-
-.hero span {
-    font-weight: bold;
-}
-
-.hero .explore-btn {
-    display: inline-block;
-    margin-top: 20px;
+.explore-btn {
+    background: yellow;
     padding: 10px 20px;
-    background-color: #FFD700;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
-/* Sections */
+/* Destination & Tours */
 .section {
-    text-align: center;
-    padding: 50px 20px;
+    padding: 20px;
 }
 
-.section h2 {
-    color: #000066;
-    font-size: 1.8rem;
-}
-
-/* Cards */
-.card-container {
+.grid-container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
 }
 
-.card {
-    background-color: white;
+.destination-card {
+    background: white;
     padding: 20px;
-    width: 200px;
-    height: 100px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px gray;
+}
+
+/* Chatbox */
+.chatbox-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#chatbox-toggle {
+    background: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.chatbox {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    background: white;
+    width: 250px;
+    padding: 10px;
+    box-shadow: 2px 2px 10px gray;
+}
+
+.chatbox-header {
+    display: flex;
+    justify-content: space-between;
     font-weight: bold;
+}
+
+.send-btn {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+/* Social Media */
+.social-media {
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-/* Extra Services */
-.services-list {
-    list-style: none;
-    padding: 0;
-}
-
-.services-list li {
-    text-align: center;
-    font-weight: bold;
-    padding: 5px 0;
-}
-
-/* Footer */
-footer {
-    text-align: center;
+    gap: 15px;
     padding: 20px;
-    background-color: #000066;
+    background: #000066;
+}
+
+.social-icon {
     color: white;
+    text-decoration: none;
 }
