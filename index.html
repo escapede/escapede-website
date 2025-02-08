@@ -8,6 +8,7 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+
     <!-- Navigation Bar -->
     <header>
         <div class="logo-container">
@@ -15,41 +16,49 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#destinations">Destinations</a></li>
-                <li><a href="#religious-tours">Religious Tours</a></li>
-                <li><a href="#extra-services">Extra Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#book-now" class="book-now">Book Now</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Religious Tours</a></li>
+                <li><a href="#">Extra Services</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Escapede</h1>
-            <p>Discover breathtaking landscapes, rich culture, and religious heritage.</p>
-            <a href="#destinations" class="explore-btn">Explore Now</a>
-        </div>
+    <section class="hero">
+        <h1>Welcome to Escapede</h1>
+        <p>Discover breathtaking landscapes, rich culture, and religious heritage.</p>
+        <button class="explore-btn">Explore Now</button>
     </section>
 
-    <!-- Top Destinations -->
-    <section id="destinations" class="section">
+    <!-- Destinations Section -->
+    <section class="destinations">
         <h2>Top Destinations</h2>
-        <div class="destinations-container">
-            <div class="destination-box">Jahaz Banda</div>
-            <div class="destination-box">Dudipatsar Lake</div>
-            <div class="destination-box">Paya Meadows</div>
-            <div class="destination-box">Gitidas Meadows</div>
+        <div class="destination-list">
+            <div class="destination">
+                <div class="destination-box">Jahaz Banda</div>
+                <button class="book-now">Book Now</button>
+            </div>
+            <div class="destination">
+                <div class="destination-box">Dudipatsar Lake</div>
+                <button class="book-now">Book Now</button>
+            </div>
+            <div class="destination">
+                <div class="destination-box">Paya Meadows</div>
+                <button class="book-now">Book Now</button>
+            </div>
+            <div class="destination">
+                <div class="destination-box">Gitidas Meadows</div>
+                <button class="book-now">Book Now</button>
+            </div>
         </div>
     </section>
 
-    <!-- Religious Tours -->
-    <section id="religious-tours" class="section">
+    <!-- Religious Tours Section -->
+    <section class="religious-tours">
         <h2>Religious Tours</h2>
-        <p>Experience the spiritual heritage of Pakistan.</p>
-        <div class="destinations-container">
+        <div class="destination-list">
             <div class="destination-box">Gurdwara Nankana Sahib</div>
             <div class="destination-box">Gurdwara Panja Sahib</div>
             <div class="destination-box">Gurdwara Kartarpur Sahib</div>
@@ -57,18 +66,36 @@
     </section>
 
     <!-- Extra Services -->
-    <section id="extra-services" class="section">
+    <section class="extra-services">
         <h2>Extra Services</h2>
         <p>Need car rental or extra services? We've got you covered.</p>
         <ul>
-            <li>✔ Car Rental</li>
-            <li>✔ Local Guide</li>
-            <li>✔ Customized Itineraries</li>
+            <li>✓ Car Rental</li>
+            <li>✓ Local Guide</li>
+            <li>✓ Customized Itineraries</li>
         </ul>
     </section>
 
     <!-- Footer -->
-    <footer id="contact">
-        <div class="social-media">
-            <a href="#" target="_blank">Facebook</a>
-            <a href="
+    <footer>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">TripAdvisor</a>
+            <a href="#">WhatsApp</a>
+        </div>
+        <p>© 2025 Escapede. All rights reserved.</p>
+    </footer>
+
+    <!-- Chatbox -->
+    <div id="chatbox">
+        <button id="chat-toggle">Chat with Us</button>
+        <div id="chat-content">
+            <textarea placeholder="Type your message here..."></textarea>
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+
+</body>
+</html>
