@@ -3,57 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escapede - Explore Pakistan</title>
+    <title>Escapede</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar">
+    <header>
         <div class="logo">
             <img src="images/logo.png" alt="Escapede Logo">
         </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#destinations">Destinations</a></li>
-            <li><a href="#religious-tours">Religious Tours</a></li>
-            <li><a href="#extra-services">Extra Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <a href="#booking" class="book-btn">Book Now</a>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#religious-tours">Religious Tours</a></li>
+                <li><a href="#extra-services">Extra Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#booking" class="book-now">Book Now</a>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section id="home" class="hero">
         <h1>Welcome to <span>Escapede</span></h1>
         <p>Discover breathtaking landscapes, rich culture, and religious heritage.</p>
         <a href="#destinations" class="explore-btn">Explore Now</a>
     </section>
 
-    <!-- Destinations Section -->
-    <section class="destinations" id="destinations">
+    <section id="destinations" class="section">
         <h2>Top Destinations</h2>
-        <div class="grid-container">
-            <div class="destination-box">Jahaz Banda</div>
-            <div class="destination-box">Dudipatsar Lake</div>
-            <div class="destination-box">Paya Meadows</div>
-            <div class="destination-box">Gitidas Meadows</div>
+        <div class="card-container">
+            <div class="card">Jahaz Banda</div>
+            <div class="card">Dudipatsar Lake</div>
+            <div class="card">Paya Meadows</div>
+            <div class="card">Gitidas Meadows</div>
         </div>
     </section>
 
-    <!-- Religious Tours Section -->
-    <section class="religious-tours" id="religious-tours">
+    <section id="religious-tours" class="section">
         <h2>Religious Tours</h2>
         <p>Experience the spiritual heritage of Pakistan.</p>
-        <div class="grid-container">
-            <div class="destination-box">Gurdwara Nankana Sahib</div>
-            <div class="destination-box">Gurdwara Panja Sahib</div>
-            <div class="destination-box">Gurdwara Kartarpur Sahib</div>
+        <div class="card-container">
+            <div class="card">Gurdwara Nankana Sahib</div>
+            <div class="card">Gurdwara Panja Sahib</div>
+            <div class="card">Gurdwara Kartarpur Sahib</div>
         </div>
     </section>
 
-    <!-- Extra Services -->
-    <section class="extra-services" id="extra-services">
+    <section id="extra-services" class="section">
         <h2>Extra Services</h2>
         <p>Need car rental or extra services? We've got you covered.</p>
         <ul>
@@ -63,7 +60,6 @@
         </ul>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>© 2025 Escapede. All rights reserved.</p>
     </footer>
