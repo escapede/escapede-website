@@ -106,6 +106,18 @@ nav ul li a {
     align-items: center;
 }
 
+/* Extra Services */
+.services-list {
+    list-style: none;
+    padding: 0;
+}
+
+.services-list li {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
 /* Footer */
 footer {
     text-align: center;
