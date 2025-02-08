@@ -1,8 +1,13 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
     background-color: #f8f9fa;
 }
 
@@ -11,31 +16,25 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #000066; /* Dark blue navbar */
+    background-color: #000066; /* Fix Color */
     padding: 15px 40px;
 }
 
-/* Logo Styling */
+/* Logo */
 .logo img {
     height: 50px;
-    margin-left: 10px;
+    width: auto;
 }
 
 /* Navigation */
-nav {
-    display: flex;
-    align-items: center;
-}
-
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
+    gap: 20px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
 }
 
 nav ul li a {
@@ -45,11 +44,6 @@ nav ul li a {
     font-size: 16px;
 }
 
-nav ul li a:hover {
-    color: #ffcc00;
-}
-
-/* Book Now Button */
 .book-now {
     background-color: #008000;
     color: white;
@@ -60,50 +54,20 @@ nav ul li a:hover {
     margin-left: 15px;
 }
 
-.book-now:hover {
-    background-color: #005700;
-}
-
-/* Fix Logo Display */
-.main-logo {
+/* Hero Section */
+.hero {
     text-align: center;
-    padding: 50px 0;
-}
-
-.main-logo img {
-    width: 200px; /* Set proper size */
-    display: block;
-    margin: 0 auto;
-}
-
-/* Section Styling */
-section {
     padding: 50px;
-    text-align: center;
 }
 
-h1, h2 {
+.hero h1 {
     color: #000066;
 }
 
-/* Fix Menu Links */
-.menu {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.menu ul {
-    padding: 0;
-    list-style-type: none;
-}
-
-.menu ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.menu ul li a {
-    color: #000066;
-    font-weight: bold;
+.cta-button {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px 20px;
     text-decoration: none;
+    border-radius: 5px;
 }
