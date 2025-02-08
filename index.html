@@ -8,9 +8,10 @@
 </head>
 <body>
 
+    <!-- Navigation Bar -->
     <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="Escapede Logo">
+        <div class="logo-container">
+            <img src="logo.png" alt="Escapede Logo" class="logo">
         </div>
         <nav>
             <ul>
@@ -21,48 +22,77 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <a href="#booking" class="book-now">Book Now</a>
+        <a href="#book-now" class="book-now-btn">Book Now</a>
     </header>
 
-    <section id="home" class="hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
         <h1>Welcome to <span>Escapede</span></h1>
         <p>Discover breathtaking landscapes, rich culture, and religious heritage.</p>
-        <a href="#destinations" class="explore-btn">Explore Now</a>
+        <button class="explore-btn">Explore Now</button>
     </section>
 
+    <!-- Destinations Section -->
     <section id="destinations" class="section">
         <h2>Top Destinations</h2>
-        <div class="card-container">
-            <div class="card">Jahaz Banda</div>
-            <div class="card">Dudipatsar Lake</div>
-            <div class="card">Paya Meadows</div>
-            <div class="card">Gitidas Meadows</div>
+        <div class="grid-container">
+            <div class="destination-card">Jahaz Banda</div>
+            <div class="destination-card">Dudipatsar Lake</div>
+            <div class="destination-card">Paya Meadows</div>
+            <div class="destination-card">Gitidas Meadows</div>
         </div>
     </section>
 
+    <!-- Religious Tours -->
     <section id="religious-tours" class="section">
         <h2>Religious Tours</h2>
-        <p>Experience the spiritual heritage of Pakistan.</p>
-        <div class="card-container">
-            <div class="card">Gurdwara Nankana Sahib</div>
-            <div class="card">Gurdwara Panja Sahib</div>
-            <div class="card">Gurdwara Kartarpur Sahib</div>
+        <div class="grid-container">
+            <div class="destination-card">Gurdwara Nankana Sahib</div>
+            <div class="destination-card">Gurdwara Panja Sahib</div>
+            <div class="destination-card">Gurdwara Kartarpur Sahib</div>
         </div>
     </section>
 
+    <!-- Extra Services -->
     <section id="extra-services" class="section">
         <h2>Extra Services</h2>
-        <p>Need car rental or extra services? We've got you covered.</p>
-        <ul class="services-list">
+        <p>Need car rental or extra services? We’ve got you covered.</p>
+        <ul>
             <li>✓ Car Rental</li>
             <li>✓ Local Guide</li>
             <li>✓ Customized Itineraries</li>
         </ul>
     </section>
 
+    <!-- Footer Section -->
     <footer>
+        <div class="social-media">
+            <a href="#" class="social-icon" id="facebook">Facebook</a>
+            <a href="#" class="social-icon" id="instagram">Instagram</a>
+            <a href="#" class="social-icon" id="twitter">Twitter</a>
+            <a href="#" class="social-icon" id="tripadvisor">TripAdvisor</a>
+            <a href="#" class="social-icon" id="whatsapp">WhatsApp</a>
+        </div>
         <p>© 2025 Escapede. All rights reserved.</p>
     </footer>
+
+    <!-- Chatbox Button -->
+    <div class="chatbox-container">
+        <button id="chatbox-toggle">💬 Chat with Us</button>
+        <div class="chatbox" id="chatbox">
+            <div class="chatbox-header">
+                <span>Chat with Us</span>
+                <button id="chatbox-close">X</button>
+            </div>
+            <div class="chatbox-body">
+                <p>How can we assist you?</p>
+                <textarea placeholder="Type your message here..."></textarea>
+                <button class="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
