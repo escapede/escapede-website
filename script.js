@@ -1,9 +1,8 @@
-// Smooth scrolling for navigation
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
+// Chatbox Toggle
+document.getElementById("chatbox-toggle").addEventListener("click", function() {
+    document.getElementById("chatbox").style.display = "block";
+});
+
+document.getElementById("chatbox-close").addEventListener("click", function() {
+    document.getElementById("chatbox").style.display = "none";
 });
