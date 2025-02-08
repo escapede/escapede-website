@@ -1,23 +1,18 @@
-/* General Styling */
-* {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #f8f8f8;
     text-align: center;
+    background-color: #F8F9FA;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #000066;
-    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #000066;
     padding: 15px 30px;
 }
 
@@ -29,92 +24,82 @@ body {
 }
 
 .nav-links {
+    list-style: none;
     display: flex;
     gap: 20px;
 }
 
+.nav-links li {
+    display: inline;
+}
+
 .nav-links a {
-    color: white;
     text-decoration: none;
-    font-size: 16px;
+    color: white;
+    font-size: 18px;
     font-weight: bold;
 }
 
-.book-now {
+.book-btn {
     background-color: green;
     color: white;
     padding: 10px 15px;
+    text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    text-decoration: none;
 }
 
 /* Hero Section */
 .hero {
-    padding: 60px;
-    background-color: #fff;
+    background-color: white;
+    padding: 100px 20px;
 }
 
 .hero h1 {
+    font-size: 36px;
     color: #000066;
-    font-size: 28px;
-    font-weight: bold;
 }
 
-.hero p {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #333;
+.hero span {
+    color: #FF0000;
 }
 
 .explore-btn {
-    background-color: gold;
-    color: black;
+    background-color: #FFC107;
     padding: 10px 20px;
-    font-size: 16px;
+    color: black;
     font-weight: bold;
+    text-decoration: none;
     border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
 }
 
-/* Destination & Tour Sections */
-.section {
-    padding: 40px;
-}
-
-.section h2 {
-    color: #000066;
-    margin-bottom: 20px;
-}
-
-/* Cards */
-.cards {
+/* Destinations & Religious Tours */
+.grid-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
-.card {
+.destination-box {
+    background: white;
+    padding: 20px;
     width: 200px;
     height: 100px;
-    background-color: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    padding: 15px;
+    font-size: 16px;
 }
 
 /* Footer */
-.footer {
+footer {
     background-color: #000066;
     color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
+    padding: 10px;
+    margin-top: 30px;
 }
