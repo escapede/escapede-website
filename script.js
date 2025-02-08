@@ -1,13 +1,8 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const chatBtn = document.getElementById("chat-btn");
-    const chatContainer = document.getElementById("chat-container");
-    const closeChat = document.getElementById("close-chat");
-
-    chatBtn.addEventListener("click", () => {
-        chatContainer.classList.toggle("hidden");
-    });
-
-    closeChat.addEventListener("click", () => {
-        chatContainer.classList.add("hidden");
-    });
+document.getElementById("chat-toggle").addEventListener("click", function() {
+    let chatContent = document.getElementById("chat-content");
+    if (chatContent.style.display === "none" || chatContent.style.display === "") {
+        chatContent.style.display = "block";
+    } else {
+        chatContent.style.display = "none";
+    }
 });
