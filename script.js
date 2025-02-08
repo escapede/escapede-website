@@ -1,8 +1,13 @@
-// Chatbox Functionality
-document.querySelector(".chat-toggle").addEventListener("click", function() {
-    document.querySelector(".chat-window").style.display = "block";
-});
+document.addEventListener("DOMContentLoaded", () => {
+    const chatBtn = document.getElementById("chat-btn");
+    const chatContainer = document.getElementById("chat-container");
+    const closeChat = document.getElementById("close-chat");
 
-document.querySelector(".chat-close").addEventListener("click", function() {
-    document.querySelector(".chat-window").style.display = "none";
+    chatBtn.addEventListener("click", () => {
+        chatContainer.classList.toggle("hidden");
+    });
+
+    closeChat.addEventListener("click", () => {
+        chatContainer.classList.add("hidden");
+    });
 });
