@@ -1,14 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
-    let images = document.querySelectorAll(".slider img");
-    let index = 0;
+document.addEventListener("DOMContentLoaded", function() {
+    // Booking Form Submission
+    document.getElementById("booking-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Thank you! Your booking request has been received.");
+    });
 
-    function slideShow() {
-        images[index].style.display = "none";
-        index = (index + 1) % images.length;
-        images[index].style.display = "block";
-    }
-
-    setInterval(slideShow, 3000);
-    images.forEach(img => img.style.display = "none");
-    images[0].style.display = "block";
+    // Chatbox Toggle
+    document.querySelector(".chat-toggle").addEventListener("click", function() {
+        document.querySelector(".chat-content").classList.toggle("visible");
+    });
 });
