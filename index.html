@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escapede - Explore Pakistan</title>
+    <title>Escapede</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-
-    <!-- Header -->
+    <!-- Navigation Bar -->
     <header>
         <div class="logo-container">
-            <img src="images/logo.png" alt="Escapede Logo">
+            <img src="logo.png" alt="Escapede Logo">
         </div>
         <nav>
             <ul>
@@ -20,22 +20,24 @@
                 <li><a href="#religious-tours">Religious Tours</a></li>
                 <li><a href="#extra-services">Extra Services</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#" class="book-now">Book Now</a></li>
+                <li><a href="#book-now" class="book-now">Book Now</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Welcome Section -->
-    <section id="home" class="welcome-section">
-        <h1>Welcome to <span>Escapede</span></h1>
-        <p>Discover breathtaking landscapes, rich culture, and religious heritage.</p>
-        <button class="explore-btn">Explore Now</button>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Escapede</h1>
+            <p>Discover breathtaking landscapes, rich culture, and religious heritage.</p>
+            <a href="#destinations" class="explore-btn">Explore Now</a>
+        </div>
     </section>
 
-    <!-- Destinations Section -->
-    <section id="destinations">
+    <!-- Top Destinations -->
+    <section id="destinations" class="section">
         <h2>Top Destinations</h2>
-        <div class="destination-container">
+        <div class="destinations-container">
             <div class="destination-box">Jahaz Banda</div>
             <div class="destination-box">Dudipatsar Lake</div>
             <div class="destination-box">Paya Meadows</div>
@@ -43,11 +45,11 @@
         </div>
     </section>
 
-    <!-- Religious Tours Section -->
-    <section id="religious-tours">
+    <!-- Religious Tours -->
+    <section id="religious-tours" class="section">
         <h2>Religious Tours</h2>
         <p>Experience the spiritual heritage of Pakistan.</p>
-        <div class="destination-container">
+        <div class="destinations-container">
             <div class="destination-box">Gurdwara Nankana Sahib</div>
             <div class="destination-box">Gurdwara Panja Sahib</div>
             <div class="destination-box">Gurdwara Kartarpur Sahib</div>
@@ -55,7 +57,7 @@
     </section>
 
     <!-- Extra Services -->
-    <section id="extra-services">
+    <section id="extra-services" class="section">
         <h2>Extra Services</h2>
         <p>Need car rental or extra services? We've got you covered.</p>
         <ul>
@@ -66,29 +68,7 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="social-icons">
-            <a href="#" class="social-btn">Facebook</a>
-            <a href="#" class="social-btn">Instagram</a>
-            <a href="#" class="social-btn">Twitter</a>
-            <a href="#" class="social-btn">TripAdvisor</a>
-            <a href="#" class="social-btn">WhatsApp</a>
-        </div>
-        <p>© 2025 Escapede. All rights reserved.</p>
-    </footer>
-
-    <!-- Chatbox -->
-    <div class="chatbox">
-        <button class="chat-toggle">Chat with Us</button>
-        <div class="chat-window">
-            <button class="chat-close">X</button>
-            <p>How can we assist you?</p>
-            <textarea placeholder="Type your message here..."></textarea>
-            <button class="send-btn">Send</button>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-
-</body>
-</html>
+    <footer id="contact">
+        <div class="social-media">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="
