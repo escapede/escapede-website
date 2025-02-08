@@ -16,7 +16,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #000066; /* Fix Color */
+    background-color: #000066;
     padding: 15px 40px;
 }
 
@@ -24,7 +24,7 @@ header {
 .logo img {
     height: 50px;
     width: auto;
-    background-color: white; /* Ensures White Background */
+    background-color: white;
     padding: 5px;
     border-radius: 5px;
 }
@@ -106,13 +106,16 @@ nav ul li a:hover {
     width: 200px;
 }
 
-.card img {
+/* Placeholder Box for Images */
+.placeholder {
     width: 100%;
+    height: 150px;
+    background-color: #cccccc;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .card p {
-    margin-top: 10px;
     font-weight: bold;
 }
 
