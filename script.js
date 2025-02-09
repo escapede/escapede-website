@@ -1,12 +1,18 @@
-document.getElementById('chat-toggle').addEventListener('click', function() {
-    var chat = document.getElementById('chat-container');
-    if (chat.style.display === "none") {
-        chat.style.display = "block";
-    } else {
-        chat.style.display = "none";
-    }
+// Slider functionality
+document.addEventListener("DOMContentLoaded", function () {
+    let sliders = document.querySelectorAll(".slider");
+    sliders.forEach(slider => {
+        slider.scrollLeft = 0;
+    });
 });
 
-document.getElementById('send-message').addEventListener('click', function() {
+// AI Chatbox Toggle
+document.querySelector(".chat-toggle").addEventListener("click", function () {
+    let chatContent = document.querySelector(".chat-content");
+    chatContent.style.display = chatContent.style.display === "block" ? "none" : "block";
+});
+
+// Send Chat
+document.querySelector("#send-chat").addEventListener("click", function () {
     alert("AI Bot: We will get back to you soon!");
 });
