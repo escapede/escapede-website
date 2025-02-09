@@ -1,17 +1,16 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f8f8f8;
+    background-color: #f8f9fa;
 }
 
-/* Header */
 header {
+    background-color: #000080;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #000066;
     padding: 15px;
 }
 
@@ -20,78 +19,82 @@ header {
 }
 
 nav ul {
-    display: flex;
     list-style: none;
+    display: flex;
     gap: 20px;
 }
 
-nav ul li a {
-    text-decoration: none;
+nav a {
     color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* WhatsApp Button */
 .whatsapp-button {
-    background: green;
+    background-color: green;
     color: white;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 10px 20px;
     text-decoration: none;
+    font-weight: bold;
 }
 
-/* Hero Section */
 .hero {
     text-align: center;
     padding: 50px;
+    background-color: #fff;
 }
 
-.explore-button {
-    background: yellow;
+.explore-btn {
+    background-color: yellow;
     padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Sliders */
 .slider {
     display: flex;
     overflow-x: auto;
-}
-
-.slide {
-    display: flex;
-    gap: 10px;
-}
-
-.destination-box {
-    background: #ccc;
     padding: 20px;
+}
+
+.trip-card {
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin: 10px;
     text-align: center;
+    border-radius: 8px;
+    flex: 1;
 }
 
-.book-button {
-    background: green;
+.book-btn {
+    background-color: green;
     color: white;
-    padding: 5px 10px;
-    border: none;
+    padding: 10px;
+    text-decoration: none;
 }
 
-/* Chatbox */
-.chatbox {
+footer {
+    background-color: #000080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.chatbot {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #000066;
-    color: white;
+}
+
+.chatbox {
+    display: none;
+    background: white;
     padding: 10px;
     border-radius: 5px;
 }
 
-.chat-content {
-    display: none;
-}
-
 .chat-toggle {
-    background: white;
-    color: #000066;
-    padding: 5px;
-    border: none;
+    background-color: #000080;
+    color: white;
+    padding: 10px;
 }
