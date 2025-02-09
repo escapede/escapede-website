@@ -1,101 +1,119 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #f8f9fa;
+    text-align: center;
 }
 
-/* Navbar */
-.navbar {
+/* Header */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #000066;
-    padding: 15px;
+    padding: 10px 20px;
+    color: white;
 }
 
-.logo img {
+.logo-container img {
     width: 50px;
-    height: 50px;
 }
 
-.nav-links {
+nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
 }
 
-.nav-links li a {
-    color: white;
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.book-now {
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 /* Hero Section */
 .hero {
-    text-align: center;
     padding: 50px;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
-.btn-primary {
-    background-color: yellow;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-}
-
-/* Slider */
+/* Destinations & Religious Tours */
 .slider {
     display: flex;
-    overflow: auto;
-    width: 100%;
-    gap: 10px;
-    padding: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
 }
 
 .slide {
     display: flex;
-    gap: 15px;
 }
 
-/* Destinations & Tours */
-.destination-box, .tour-box {
+.destination-card {
     background-color: lightgray;
     padding: 20px;
+    margin: 10px;
     border-radius: 10px;
-    text-align: center;
-    min-width: 200px;
-    flex: 0 0 auto;
+    display: inline-block;
 }
 
-.btn-book {
+.book-now {
     display: block;
     margin-top: 10px;
-    background-color: green;
-    color: white;
-    padding: 5px;
-    text-decoration: none;
 }
 
-/* AI Chatbot */
-.chatbot {
+/* Chatbox */
+#chatbox {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
 }
 
-.chatbox {
-    display: none;
-    background-color: white;
+#chat-toggle {
+    background-color: #000066;
+    color: white;
     padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px gray;
+    border: none;
+    cursor: pointer;
+}
+
+#chat-content {
+    display: none;
+    background: white;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: #000066;
+    color: white;
+    padding: 20px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
 }
 
 .whatsapp-btn {
-    background-color: green;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+    font-weight: bold;
+    color: green;
 }
