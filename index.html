@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escapede Tours</title>
+    <title>Escapede - Travel with Us</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- Header & Navigation -->
+    <!-- Header Section -->
     <header>
         <div class="logo">
             <img src="logo.png" alt="Escapede Logo">
@@ -17,96 +17,75 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#destinations">Destinations</a></li>
-                <li><a href="#religious-tours">Religious Tours</a></li>
-                <li><a href="#extra-services">Extra Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://wa.me/923344442392" class="whatsapp-button">Book Now</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Religious Tours</a></li>
+                <li><a href="#">Extra Services</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <a href="https://wa.me/923344442392" class="whatsapp-button">WhatsApp</a>
     </header>
 
-    <!-- Welcome Section -->
-    <section class="welcome">
+    <!-- Hero Section -->
+    <section class="hero">
         <h1>Welcome to Escapede</h1>
         <p>Discover breathtaking landscapes, rich culture, and religious heritage.</p>
-        <a href="#destinations" class="explore-button">Explore Now</a>
+        <a href="#" class="explore-button">Explore Now</a>
     </section>
 
-    <!-- Top Destinations (Slider) -->
-    <section id="destinations">
+    <!-- Top Destinations Slider -->
+    <section class="slider-section">
         <h2>Top Destinations</h2>
         <div class="slider">
             <div class="slide">
-                <div class="destination-box">
-                    <p>Jahaz Banda</p>
-                    <a href="#" class="book-now">Book Now</a>
-                </div>
-                <div class="destination-box">
-                    <p>Dudipatsar Lake</p>
-                    <a href="#" class="book-now">Book Now</a>
-                </div>
-                <div class="destination-box">
-                    <p>Paya Meadows</p>
-                    <a href="#" class="book-now">Book Now</a>
-                </div>
-                <div class="destination-box">
-                    <p>Gitidas Meadows</p>
-                    <a href="#" class="book-now">Book Now</a>
-                </div>
+                <div class="destination-box">Jahaz Banda <button class="book-button">Book Now</button></div>
+                <div class="destination-box">Dudipatsar Lake <button class="book-button">Book Now</button></div>
+                <div class="destination-box">Paya Meadows <button class="book-button">Book Now</button></div>
+                <div class="destination-box">Gitidas Meadows <button class="book-button">Book Now</button></div>
             </div>
         </div>
     </section>
 
-    <!-- Religious Tours (Slider) -->
-    <section id="religious-tours">
+    <!-- Religious Tours Slider -->
+    <section class="slider-section">
         <h2>Religious Tours</h2>
         <div class="slider">
             <div class="slide">
-                <div class="destination-box">
-                    <p>Gurdwara Nankana Sahib</p>
-                    <a href="#" class="book-now">Book Now</a>
-                </div>
-                <div class="destination-box">
-                    <p>Gurdwara Panja Sahib</p>
-                    <a href="#" class="book-now">Book Now</a>
-                </div>
-                <div class="destination-box">
-                    <p>Gurdwara Kartarpur Sahib</p>
-                    <a href="#" class="book-now">Book Now</a>
-                </div>
+                <div class="destination-box">Gurdwara Nankana Sahib <button class="book-button">Book Now</button></div>
+                <div class="destination-box">Gurdwara Panja Sahib <button class="book-button">Book Now</button></div>
+                <div class="destination-box">Gurdwara Kartarpur Sahib <button class="book-button">Book Now</button></div>
             </div>
         </div>
     </section>
 
     <!-- Extra Services -->
-    <section id="extra-services">
+    <section class="extra-services">
         <h2>Extra Services</h2>
-        <p>Need car rental or extra services? We’ve got you covered.</p>
         <ul>
-            <li>✔ Car Rental</li>
-            <li>✔ Local Guide</li>
-            <li>✔ Customized Itineraries</li>
+            <li>✓ Car Rental</li>
+            <li>✓ Local Guide</li>
+            <li>✓ Customized Itineraries</li>
         </ul>
     </section>
 
-    <!-- Footer -->
-    <footer id="contact">
-        <p>Follow us:</p>
-        <a href="https://www.instagram.com/escapedetours/">Instagram</a> |
-        <a href="https://www.facebook.com/escapedetours/">Facebook</a> |
-        <a href="https://wa.me/923344442392">WhatsApp</a> |
-        <a href="https://www.tripadvisor.com/">TripAdvisor</a>
+    <!-- Footer Section -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/escapedetours/">Instagram</a>
+            <a href="https://www.facebook.com/escapedetours/">Facebook</a>
+            <a href="https://wa.me/923344442392">WhatsApp</a>
+            <a href="#">TripAdvisor</a>
+        </div>
         <p>© 2025 Escapede. All rights reserved.</p>
     </footer>
 
-    <!-- AI Chatbox -->
+    <!-- Chatbox -->
     <div class="chatbox">
-        <button id="chat-toggle">Chat with Us</button>
-        <div id="chat-container">
-            <p>AI Chatbot: How can we assist you?</p>
-            <input type="text" id="user-input" placeholder="Type your message...">
-            <button id="send-message">Send</button>
+        <button class="chat-toggle">Chat with Us</button>
+        <div class="chat-content">
+            <p>AI Bot: How can we assist you?</p>
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button id="send-chat">Send</button>
         </div>
     </div>
 
