@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escapede - Travel with Us</title>
+    <title>Escapede - Explore the World</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Navigation Bar -->
     <header>
         <div class="logo">
             <img src="logo.png" alt="Escapede Logo">
@@ -30,30 +30,51 @@
     <section class="hero">
         <h1>Welcome to Escapede</h1>
         <p>Discover breathtaking landscapes, rich culture, and religious heritage.</p>
-        <a href="#" class="explore-button">Explore Now</a>
+        <a href="#" class="explore-btn">Explore Now</a>
     </section>
 
-    <!-- Top Destinations Slider -->
-    <section class="slider-section">
+    <!-- Top Destinations -->
+    <section class="destinations">
         <h2>Top Destinations</h2>
         <div class="slider">
             <div class="slide">
-                <div class="destination-box">Jahaz Banda <button class="book-button">Book Now</button></div>
-                <div class="destination-box">Dudipatsar Lake <button class="book-button">Book Now</button></div>
-                <div class="destination-box">Paya Meadows <button class="book-button">Book Now</button></div>
-                <div class="destination-box">Gitidas Meadows <button class="book-button">Book Now</button></div>
+                <div class="trip-card">
+                    <h3>Jahaz Banda</h3>
+                    <a href="#" class="book-btn">Book Now</a>
+                </div>
+                <div class="trip-card">
+                    <h3>Dudipatsar Lake</h3>
+                    <a href="#" class="book-btn">Book Now</a>
+                </div>
+                <div class="trip-card">
+                    <h3>Paya Meadows</h3>
+                    <a href="#" class="book-btn">Book Now</a>
+                </div>
+                <div class="trip-card">
+                    <h3>Gitidas Meadows</h3>
+                    <a href="#" class="book-btn">Book Now</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Religious Tours Slider -->
-    <section class="slider-section">
+    <!-- Religious Tours -->
+    <section class="religious-tours">
         <h2>Religious Tours</h2>
         <div class="slider">
             <div class="slide">
-                <div class="destination-box">Gurdwara Nankana Sahib <button class="book-button">Book Now</button></div>
-                <div class="destination-box">Gurdwara Panja Sahib <button class="book-button">Book Now</button></div>
-                <div class="destination-box">Gurdwara Kartarpur Sahib <button class="book-button">Book Now</button></div>
+                <div class="trip-card">
+                    <h3>Gurdwara Nankana Sahib</h3>
+                    <a href="#" class="book-btn">Book Now</a>
+                </div>
+                <div class="trip-card">
+                    <h3>Gurdwara Panja Sahib</h3>
+                    <a href="#" class="book-btn">Book Now</a>
+                </div>
+                <div class="trip-card">
+                    <h3>Gurdwara Kartarpur Sahib</h3>
+                    <a href="#" class="book-btn">Book Now</a>
+                </div>
             </div>
         </div>
     </section>
@@ -61,14 +82,15 @@
     <!-- Extra Services -->
     <section class="extra-services">
         <h2>Extra Services</h2>
+        <p>Need car rental or extra services? We've got you covered.</p>
         <ul>
-            <li>✓ Car Rental</li>
-            <li>✓ Local Guide</li>
-            <li>✓ Customized Itineraries</li>
+            <li>✔ Car Rental</li>
+            <li>✔ Local Guide</li>
+            <li>✔ Customized Itineraries</li>
         </ul>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer with Social Media Links -->
     <footer>
         <div class="social-links">
             <a href="https://www.instagram.com/escapedetours/">Instagram</a>
@@ -79,13 +101,13 @@
         <p>© 2025 Escapede. All rights reserved.</p>
     </footer>
 
-    <!-- Chatbox -->
-    <div class="chatbox">
+    <!-- Chatbot -->
+    <div class="chatbot">
         <button class="chat-toggle">Chat with Us</button>
-        <div class="chat-content">
+        <div class="chatbox">
             <p>AI Bot: How can we assist you?</p>
-            <input type="text" id="chat-input" placeholder="Type your message...">
-            <button id="send-chat">Send</button>
+            <input type="text" placeholder="Type your message...">
+            <button class="send-btn">Send</button>
         </div>
     </div>
 
