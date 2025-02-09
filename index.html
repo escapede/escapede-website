@@ -9,84 +9,86 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="logo.png" alt="Escapede Logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
+<!-- Navbar -->
+<header>
+    <div class="logo-container">
+        <img src="logo.png" alt="Escapede Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
             <li><a href="#destinations">Destinations</a></li>
             <li><a href="#religious-tours">Religious Tours</a></li>
             <li><a href="#extra-services">Extra Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="https://wa.me/923344442392" class="whatsapp-btn">Book Now</a>
     </nav>
+    <a href="#booking" class="book-now">Book Now</a>
+</header>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <h1>Welcome to Escapede</h1>
-        <p>Discover breathtaking landscapes, rich culture, and religious heritage.</p>
-        <a href="#destinations" class="btn-primary">Explore Now</a>
-    </header>
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Welcome to Escapede</h1>
+    <p>Discover breathtaking landscapes, rich culture, and religious heritage.</p>
+    <a href="#destinations" class="explore-btn">Explore Now</a>
+</section>
 
-    <!-- Top Destinations Slider -->
-    <section id="destinations">
-        <h2>Top Destinations</h2>
-        <div class="slider">
-            <div class="slide">
-                <div class="destination-box">Jahaz Banda <a href="booking.html" class="btn-book">Book Now</a></div>
-                <div class="destination-box">Dudipatsar Lake <a href="booking.html" class="btn-book">Book Now</a></div>
-                <div class="destination-box">Paya Meadows <a href="booking.html" class="btn-book">Book Now</a></div>
-                <div class="destination-box">Gitidas Meadows <a href="booking.html" class="btn-book">Book Now</a></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Religious Tours Slider -->
-    <section id="religious-tours">
-        <h2>Religious Tours</h2>
-        <div class="slider">
-            <div class="slide">
-                <div class="tour-box">Gurdwara Nankana Sahib <a href="booking.html" class="btn-book">Book Now</a></div>
-                <div class="tour-box">Gurdwara Panja Sahib <a href="booking.html" class="btn-book">Book Now</a></div>
-                <div class="tour-box">Gurdwara Kartarpur Sahib <a href="booking.html" class="btn-book">Book Now</a></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Extra Services -->
-    <section id="extra-services">
-        <h2>Extra Services</h2>
-        <p>Need car rental or extra services? We’ve got you covered.</p>
-        <ul>
-            <li>✓ Car Rental</li>
-            <li>✓ Local Guide</li>
-            <li>✓ Customized Itineraries</li>
-        </ul>
-    </section>
-
-    <!-- AI Chatbot -->
-    <div class="chatbot">
-        <button onclick="toggleChat()">Chat with Us</button>
-        <div class="chatbox" id="chatbox">
-            <p>How can we assist you?</p>
-            <input type="text" id="chatInput" placeholder="Type your message...">
-            <button onclick="sendMessage()">Send</button>
+<!-- Top Destinations (Slider) -->
+<section id="destinations">
+    <h2>Top Destinations</h2>
+    <div class="slider">
+        <div class="slide">
+            <div class="destination-card">Jahaz Banda <button class="book-now">Book Now</button></div>
+            <div class="destination-card">Dudipatsar Lake <button class="book-now">Book Now</button></div>
+            <div class="destination-card">Paya Meadows <button class="book-now">Book Now</button></div>
+            <div class="destination-card">Gitidas Meadows <button class="book-now">Book Now</button></div>
         </div>
     </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="social-links">
-            <a href="https://www.instagram.com/escapedetours/" target="_blank">Instagram</a>
-            <a href="https://www.facebook.com/escapedetours/" target="_blank">Facebook</a>
-            <a href="https://wa.me/923344442392" target="_blank">WhatsApp</a>
-            <a href="https://www.tripadvisor.com/" target="_blank">TripAdvisor</a>
+<!-- Religious Tours (Slider) -->
+<section id="religious-tours">
+    <h2>Religious Tours</h2>
+    <div class="slider">
+        <div class="slide">
+            <div class="destination-card">Gurdwara Nankana Sahib <button class="book-now">Book Now</button></div>
+            <div class="destination-card">Gurdwara Panja Sahib <button class="book-now">Book Now</button></div>
+            <div class="destination-card">Gurdwara Kartarpur Sahib <button class="book-now">Book Now</button></div>
         </div>
-        <p>© 2025 Escapede. All rights reserved.</p>
-    </footer>
+    </div>
+</section>
+
+<!-- Extra Services -->
+<section id="extra-services">
+    <h2>Extra Services</h2>
+    <p>Need car rental or extra services? We've got you covered.</p>
+    <ul>
+        <li>✓ Car Rental</li>
+        <li>✓ Local Guide</li>
+        <li>✓ Customized Itineraries</li>
+    </ul>
+</section>
+
+<!-- Footer with Social Media Links -->
+<footer>
+    <div class="social-links">
+        <a href="https://www.instagram.com/escapedetours/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/escapedetours/" target="_blank">Facebook</a>
+        <a href="https://www.tripadvisor.com" target="_blank">TripAdvisor</a>
+        <a href="https://wa.me/923344442392" target="_blank" class="whatsapp-btn">WhatsApp</a>
+    </div>
+    <p>© 2025 Escapede. All rights reserved.</p>
+</footer>
+
+<!-- Chatbox -->
+<div id="chatbox">
+    <button id="chat-toggle">Chat with Us</button>
+    <div id="chat-content" class="hidden">
+        <p>AI Bot: How can we assist you?</p>
+        <input type="text" id="chat-input" placeholder="Type your message...">
+        <button id="send-btn">Send</button>
+    </div>
+</div>
 
 </body>
 </html>
