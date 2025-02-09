@@ -1,18 +1,32 @@
-// Slider functionality
-document.addEventListener("DOMContentLoaded", function () {
-    let sliders = document.querySelectorAll(".slider");
-    sliders.forEach(slider => {
-        slider.scrollLeft = 0;
+document.querySelector(".chat-toggle").addEventListener("click", function() {
+    document.querySelector(".chatbox").classList.toggle("show");
+});
+
+const sliders = document.querySelectorAll(".slider");
+sliders.forEach(slider => {
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener("mousedown", (e) => {
+        isDown = true;
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
     });
-});
 
-// AI Chatbox Toggle
-document.querySelector(".chat-toggle").addEventListener("click", function () {
-    let chatContent = document.querySelector(".chat-content");
-    chatContent.style.display = chatContent.style.display === "block" ? "none" : "block";
-});
+    slider.addEventListener("mouseleave", () => {
+        isDown = false;
+    });
 
-// Send Chat
-document.querySelector("#send-chat").addEventListener("click", function () {
-    alert("AI Bot: We will get back to you soon!");
+    slider.addEventListener("mouseup", () => {
+        isDown = false;
+    });
+
+    slider.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2;
+        slider.scrollLeft = scrollLeft - walk;
+    });
 });
