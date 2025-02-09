@@ -44,20 +44,28 @@ body {
     color: black;
 }
 
-/* Destinations & Tours */
-.destinations-container, .tour-container {
+/* Slider */
+.slider {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 20px;
+    overflow: auto;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
 }
 
+.slide {
+    display: flex;
+    gap: 15px;
+}
+
+/* Destinations & Tours */
 .destination-box, .tour-box {
     background-color: lightgray;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: 200px;
+    min-width: 200px;
+    flex: 0 0 auto;
 }
 
 .btn-book {
@@ -67,10 +75,9 @@ body {
     color: white;
     padding: 5px;
     text-decoration: none;
-    text-align: center;
 }
 
-/* Chatbot */
+/* AI Chatbot */
 .chatbot {
     position: fixed;
     bottom: 20px;
