@@ -1,87 +1,97 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: #f8f8f8;
 }
 
+/* Header */
 header {
-    background: #000066;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
     align-items: center;
+    background: #000066;
+    padding: 15px;
 }
 
 .logo img {
-    width: 100px;
+    height: 50px;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
+    list-style: none;
+    gap: 20px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: white;
 }
 
+/* WhatsApp Button */
 .whatsapp-button {
     background: green;
     color: white;
-    padding: 8px 12px;
+    padding: 10px;
+    border-radius: 5px;
     text-decoration: none;
 }
 
-section {
-    padding: 20px;
+/* Hero Section */
+.hero {
     text-align: center;
+    padding: 50px;
 }
 
+.explore-button {
+    background: yellow;
+    padding: 10px 20px;
+}
+
+/* Sliders */
 .slider {
     display: flex;
-    overflow: auto;
+    overflow-x: auto;
+}
+
+.slide {
+    display: flex;
+    gap: 10px;
 }
 
 .destination-box {
-    background: lightgray;
+    background: #ccc;
     padding: 20px;
-    margin: 10px;
     text-align: center;
-    border-radius: 5px;
-    width: 200px;
 }
 
-.book-now {
-    display: block;
+.book-button {
     background: green;
     color: white;
-    padding: 8px;
-    text-decoration: none;
-    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
 }
 
+/* Chatbox */
 .chatbox {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
-
-#chat-container {
-    display: none;
-    border: 1px solid black;
-    padding: 10px;
-    background: white;
-}
-
-#chat-toggle {
-    background: navy;
+    bottom: 20px;
+    right: 20px;
+    background: #000066;
     color: white;
     padding: 10px;
+    border-radius: 5px;
+}
+
+.chat-content {
+    display: none;
+}
+
+.chat-toggle {
+    background: white;
+    color: #000066;
+    padding: 5px;
     border: none;
-    cursor: pointer;
 }
