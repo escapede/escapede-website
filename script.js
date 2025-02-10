@@ -1,3 +1,3 @@
-document.querySelector(".chat-toggle").addEventListener("click", function() {
-    document.querySelector(".chat-content").classList.toggle("active");
+document.querySelector(".chat-btn").addEventListener("click", function() {
+    document.querySelector(".chat-popup").style.display = "block";
 });
