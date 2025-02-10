@@ -4,87 +4,69 @@ body {
     padding: 0;
     background-color: #f8f9fa;
 }
-
 header {
-    background-color: #000080;
-    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: navy;
+    padding: 15px;
 }
-
 .logo img {
-    width: 120px;
+    width: 150px;
 }
-
 nav ul {
     list-style: none;
     display: flex;
+    gap: 20px;
 }
-
-nav ul li {
-    margin: 0 15px;
-}
-
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 18px;
 }
-
+.whatsapp-icon img {
+    width: 50px;
+}
 .hero {
     text-align: center;
     padding: 50px;
 }
-
-.explore-button {
-    background: yellow;
+.explore-btn {
+    background-color: yellow;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
 }
-
 .slider {
     display: flex;
-    overflow: auto;
-    padding: 20px;
+    overflow-x: auto;
 }
-
 .destination-card, .tour-card {
-    background: #d3d3d3;
+    background-color: lightgray;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
-    min-width: 200px;
-}
-
-.book-button {
-    display: block;
-    background: green;
-    color: white;
     text-align: center;
-    padding: 5px;
-    margin-top: 10px;
-    text-decoration: none;
-    font-weight: bold;
 }
-
-.chatbox {
+.book-btn {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.chatbot {
     position: fixed;
     bottom: 20px;
     right: 20px;
 }
-
-.chat-toggle {
-    background: navy;
+.chat-btn {
+    background-color: navy;
     color: white;
     padding: 10px;
     border: none;
+    cursor: pointer;
 }
-
-.chat-content {
+.chat-popup {
     display: none;
-    background: white;
-    padding: 10px;
-    box-shadow: 0 0 10px gray;
 }
