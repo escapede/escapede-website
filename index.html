@@ -3,90 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escapede Tours - Explore Pakistan</title>
+    <title>Escapede - Travel & Tours</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header & Navigation -->
     <header>
         <div class="logo">
             <img src="logo.png" alt="Escapede Logo">
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#destinations">Destinations</a></li>
-                <li><a href="#religious-tours">Religious Tours</a></li>
-                <li><a href="#extra-services">Extra Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://wa.me/923344442392" class="whatsapp-button">WhatsApp</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="religious-tours.html">Religious Tours</a></li>
+                <li><a href="extra-services.html">Extra Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <a href="https://wa.me/923344442392" class="whatsapp-icon">
+            <img src="whatsapp-icon.png" alt="WhatsApp">
+        </a>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <h1>Welcome to Escapede</h1>
         <p>Discover breathtaking landscapes, rich culture, and religious heritage.</p>
-        <a href="#destinations" class="explore-button">Explore Now</a>
+        <a href="#explore" class="explore-btn">Explore Now</a>
     </section>
 
-    <!-- Top Destinations -->
-    <section id="destinations">
+    <!-- Top Destinations Slider -->
+    <section id="top-destinations">
         <h2>Top Destinations</h2>
         <div class="slider">
             <div class="slide">
-                <div class="destination-card">Jahaz Banda <a href="#" class="book-button">Book Now</a></div>
-                <div class="destination-card">Dudipatsar Lake <a href="#" class="book-button">Book Now</a></div>
-                <div class="destination-card">Paya Meadows <a href="#" class="book-button">Book Now</a></div>
-                <div class="destination-card">Gitidas Meadows <a href="#" class="book-button">Book Now</a></div>
+                <div class="destination-card">Jahaz Banda <a href="booking.html" class="book-btn">Book Now</a></div>
+                <div class="destination-card">Dudipatsar Lake <a href="booking.html" class="book-btn">Book Now</a></div>
+                <div class="destination-card">Paya Meadows <a href="booking.html" class="book-btn">Book Now</a></div>
+                <div class="destination-card">Gitidas Meadows <a href="booking.html" class="book-btn">Book Now</a></div>
             </div>
         </div>
     </section>
 
-    <!-- Religious Tours -->
+    <!-- Religious Tours Slider -->
     <section id="religious-tours">
         <h2>Religious Tours</h2>
         <div class="slider">
             <div class="slide">
-                <div class="tour-card">Gurdwara Nankana Sahib <a href="#" class="book-button">Book Now</a></div>
-                <div class="tour-card">Gurdwara Panja Sahib <a href="#" class="book-button">Book Now</a></div>
-                <div class="tour-card">Gurdwara Kartarpur Sahib <a href="#" class="book-button">Book Now</a></div>
+                <div class="tour-card">Gurdwara Nankana Sahib <a href="booking.html" class="book-btn">Book Now</a></div>
+                <div class="tour-card">Gurdwara Panja Sahib <a href="booking.html" class="book-btn">Book Now</a></div>
+                <div class="tour-card">Gurdwara Kartarpur Sahib <a href="booking.html" class="book-btn">Book Now</a></div>
             </div>
         </div>
     </section>
 
-    <!-- Extra Services -->
-    <section id="extra-services">
-        <h2>Extra Services</h2>
-        <p>Need car rental or extra services? We've got you covered.</p>
-        <ul>
-            <li>✓ Car Rental</li>
-            <li>✓ Local Guide</li>
-            <li>✓ Customized Itineraries</li>
-        </ul>
-    </section>
-
-    <!-- Footer with Social Media Links -->
-    <footer>
-        <a href="https://www.instagram.com/escapedetours/">Instagram</a> |
-        <a href="https://www.facebook.com/escapedetours/">Facebook</a> |
-        <a href="https://www.tripadvisor.com/">TripAdvisor</a> |
-        <a href="https://wa.me/923344442392">WhatsApp</a>
-        <p>&copy; 2025 Escapede. All rights reserved.</p>
-    </footer>
-
-    <!-- Chatbox -->
-    <div class="chatbox">
-        <button class="chat-toggle">Chat with Us</button>
-        <div class="chat-content">
+    <!-- AI Chatbot -->
+    <div class="chatbot">
+        <button class="chat-btn">Chat with Us</button>
+        <div class="chat-popup">
             <p>How can we assist you?</p>
             <input type="text" placeholder="Type your message...">
-            <button>Send</button>
+            <button class="send-btn">Send</button>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Escapede. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/escapedetours/">Instagram</a>
+            <a href="https://www.facebook.com/escapedetours/">Facebook</a>
+            <a href="https://wa.me/923344442392">WhatsApp</a>
+            <a href="https://www.tripadvisor.com/">TripAdvisor</a>
+        </div>
+    </footer>
 
 </body>
 </html>
