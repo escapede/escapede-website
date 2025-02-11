@@ -1,72 +1,57 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
 }
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: navy;
-    padding: 15px;
+    padding: 10px 20px;
 }
-.logo img {
-    width: 150px;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-.whatsapp-icon img {
-    width: 50px;
-}
+
 .hero {
     text-align: center;
     padding: 50px;
 }
-.explore-btn {
-    background-color: yellow;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
+
+.slider-section {
+    text-align: center;
+    margin: 20px;
 }
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+}
+
 .slider {
     display: flex;
-    overflow-x: auto;
+    transition: 0.5s ease-in-out;
 }
-.destination-card, .tour-card {
-    background-color: lightgray;
+
+.slide {
     padding: 20px;
+    background: lightgray;
+    border-radius: 8px;
     margin: 10px;
-    border-radius: 10px;
-    text-align: center;
 }
+
 .book-btn {
     background-color: green;
     color: white;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
 }
+
 .chatbot {
     position: fixed;
     bottom: 20px;
     right: 20px;
-}
-.chat-btn {
-    background-color: navy;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-.chat-popup {
-    display: none;
 }
