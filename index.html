@@ -3,33 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escapede - Explore Pakistan</title>
+    <title>Escapede Tours - Explore Pakistan</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Header -->
+
+    <!-- Header & Navigation -->
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Escapede Logo">
+            <img src="images/logo.png" alt="Escapede Logo">
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="destinations.html">Destinations</a></li>
                 <li><a href="religious-tours.html">Religious Tours</a></li>
-                <li><a href="extra-services.html">Extra Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <a href="https://wa.me/923344442392" class="whatsapp-btn"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+        <a href="https://wa.me/923344442392" class="whatsapp-icon">
+            <img src="images/whatsapp-icon.png" alt="WhatsApp">
+        </a>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <h1>Welcome to Escapede</h1>
         <p>Discover breathtaking landscapes, rich culture, and religious heritage.</p>
-        <a href="destinations.html" class="btn">Explore Now</a>
+        <a href="destinations.html" class="explore-btn">Explore Now</a>
     </section>
 
     <!-- Top Destinations Slider -->
@@ -61,16 +63,20 @@
         </div>
     </section>
 
-    <!-- Extra Services -->
-    <section class="extra-services">
-        <h2>Extra Services</h2>
-        <p>Need car rental or local guides? We've got you covered.</p>
-        <ul>
-            <li>✓ Car Rental</li>
-            <li>✓ Local Guide</li>
-            <li>✓ Customized Itineraries</li>
-        </ul>
+    <!-- Contact Page Link -->
+    <section id="contact">
+        <a href="contact.html" class="contact-btn">Learn More About Us</a>
     </section>
+
+    <!-- AI Chatbot -->
+    <div class="chatbot">
+        <button onclick="toggleChat()">Chat with Us</button>
+        <div id="chat-window" class="chat-window">
+            <p>How can we assist you?</p>
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -82,14 +88,5 @@
         </div>
     </footer>
 
-    <!-- Chatbot -->
-    <div class="chatbot">
-        <button onclick="toggleChat()">Chat with Us</button>
-        <div id="chat-window" class="chat-window">
-            <p>How can we assist you?</p>
-            <input type="text" id="chat-input" placeholder="Type your message...">
-            <button onclick="sendMessage()">Send</button>
-        </div>
-    </div>
 </body>
 </html>
